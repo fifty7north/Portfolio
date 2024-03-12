@@ -3,7 +3,7 @@
 :root {
   --primary: #36669c;
   --secondary: #00ff95;
-  --accent: #f07f77;
+  --accent: #ff006a;
 }
 
 body {
@@ -54,14 +54,25 @@ small {
 
 /* page content */
 
-#cursor {
+.cursor {
+  border-radius: 0;
+  display: block;
+  left: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 32px;
+  z-index: 9999999999999999;
+}
+
+.cursor-circle {
   background-color: #ffffff;
   border-radius: 100%;
   height: 32px;
-  mix-blend-mode: difference;
   pointer-events: none;
   position: absolute;
-  transition-duration: 0.25s;
+  transition: opacity 0.25s;
   width: 32px;
   z-index: 999;
 }
