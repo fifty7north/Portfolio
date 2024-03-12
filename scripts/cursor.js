@@ -37,3 +37,11 @@ function animateCircles() {
 }
 
 animateCircles();
+
+window.addEventListener("mouseover", (e) => {
+  cursor.style.opacity = "1";
+});
+
+window.addEventListener("mouseout", (e) => {
+  cursor.style.opacity = "0";
+});
