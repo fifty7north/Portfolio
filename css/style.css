@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Shippori%20Antique:700|Shippori%20Antique:400");
+
+:root {
+  --primary: #36669c;
+  --secondary: #00ff95;
+  --accent: #f07f77;
+}
+
+body {
+  background-color: #000000;
+  cursor: none;
+  font-family: "Shippori Antique";
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Shippori Antique";
+  font-weight: 700;
+}
+
+html {
+  color: #ffffff;
+  font-size: 100%; /* 16px */
+}
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+/* page content */
+
+#cursor {
+  background-color: #ffffff;
+  border-radius: 100%;
+  height: 32px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  position: absolute;
+  transition-duration: 0.25s;
+  width: 32px;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 12.5%;
+  width: 75%;
+
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+
+    .nav-logo-name {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      background-clip: text;
+      color: transparent;
+      margin: 0;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin: 0 1em;
+    }
+  }
+}
