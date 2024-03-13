@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <div class="cursor">
+    <div class="cursor" style="opacity: 0">
       <div class="cursor-circle"></div>
       <div class="cursor-circle"></div>
       <div class="cursor-circle"></div>
@@ -33,27 +33,158 @@
     </div>
     <nav>
       <div class="navbar">
-        <div class="nav-logo">
-          <h5 class="nav-logo-name">Nathan Moir</h5>
-          <div class="nav-logo-title">Web Designer</div>
-        </div>
+        <a href="#hero" class="nav-logo">
+          <h5 class="nav-logo-text">NATHAN MOIR</h5>
+        </a>
         <div class="nav-links">
           <div class="nav-links-about">About Me</div>
           <div class="nav-links-work">Work</div>
           <div class="nav-links-contact">Contact</div>
         </div>
       </div>
-      <div class="nav-gradient"></div>
     </nav>
-    <div class="nav-gradient"></div>
-    <section class="hero">
-      <div class="hero-image"><img src="./images/portrait.png"></div>
-      <div class="hero-info">
-        <h1 class="hero-text">
-          UI/UX designer born in Elgin, pairing <span style="color: var(--primary);">professional experience</span> with <span style="color: var(--secondary);"">local knowledge</span>.
-        </h1>
-      </div>
-    </section>
+    <main>
+      <section id="hero">
+        <div class="hero-image">
+          <img src="./images/portrait.png" />
+        </div>
+        <div class="hero-content">
+          <h2>
+            Hi 👋 I'm Nathan, a Moray based
+            <span id="hero-content-title-primary">UI/UX designer</span>
+            currently studying
+            <span id="hero-content-title-accent">Interactive Media</span>
+            at UHI.
+          </h2>
+          <a href="#about" class="learn-more-button">
+            <svg
+              id="rotating-text"
+              viewBox="0 0 160 160"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+            >
+              <g>
+                <g
+                  transform="matrix(-0.725289,0.688445,-0.688445,-0.725289,62.7318,10.8428)"
+                >
+                  <text x="29.203px" y="17.937px">L</text>
+                </g>
+                <g
+                  transform="matrix(-0.543029,0.839714,-0.839714,-0.543029,51.4659,32.7787)"
+                >
+                  <text x="16.814px" y="30.393px">e</text>
+                </g>
+                <g
+                  transform="matrix(-0.289089,0.957302,-0.957302,-0.289089,54.6349,58.4135)"
+                >
+                  <text x="5.628px" y="49.493px">a</text>
+                </g>
+                <g
+                  transform="matrix(-0.0332844,0.999446,-0.999446,-0.0332844,72.4137,74.4239)"
+                >
+                  <text x="0.214px" y="72.233px">r</text>
+                </g>
+                <g
+                  transform="matrix(0.199918,0.979813,-0.979813,0.199918,86.7369,70.7175)"
+                >
+                  <text x="0.067px" y="88.47px">n</text>
+                </g>
+                <g
+                  transform="matrix(0.634271,0.773111,-0.773111,0.634271,99.0943,35.9294)"
+                >
+                  <text x="11.572px" y="122.702px">M</text>
+                </g>
+                <g
+                  transform="matrix(0.841546,0.540186,-0.540186,0.841546,82.1857,6.26992)"
+                >
+                  <text x="30.405px" y="143.224px">o</text>
+                </g>
+                <g
+                  transform="matrix(0.949116,0.314927,-0.314927,0.949116,51.1553,-7.89592)"
+                >
+                  <text x="50.012px" y="154.355px">r</text>
+                </g>
+                <g
+                  transform="matrix(0.996173,0.0873982,-0.0873982,0.996173,14.1506,-5.11762)"
+                >
+                  <text x="65.518px" y="159.041px">e</text>
+                </g>
+                <g
+                  transform="matrix(0.942086,-0.335373,0.335373,0.942086,-46.9609,42.9861)"
+                >
+                  <text x="100.982px" y="157.464px">-</text>
+                </g>
+                <g
+                  transform="matrix(0.722464,-0.691409,0.691409,0.722464,-61.706,129.98)"
+                >
+                  <text x="131.053px" y="141.852px">L</text>
+                </g>
+                <g
+                  transform="matrix(0.539236,-0.842154,0.842154,0.539236,-42.8302,180.36)"
+                >
+                  <text x="143.41px" y="129.321px">e</text>
+                </g>
+                <g
+                  transform="matrix(0.285001,-0.958527,0.958527,0.285001,4.84581,226.88)"
+                >
+                  <text x="154.501px" y="110.192px">a</text>
+                </g>
+                <g
+                  transform="matrix(0.0285323,-0.999593,0.999593,0.0285323,67.9154,244.647)"
+                >
+                  <text x="159.822px" y="87.382px">r</text>
+                </g>
+                <g
+                  transform="matrix(-0.203754,-0.979022,0.979022,-0.203754,122.755,242.277)"
+                >
+                  <text x="159.9px" y="71.219px">n</text>
+                </g>
+                <g
+                  transform="matrix(-0.637725,-0.770264,0.770264,-0.637725,214.275,174.76)"
+                >
+                  <text x="148.235px" y="36.991px">M</text>
+                </g>
+                <g
+                  transform="matrix(-0.843773,-0.536701,0.536701,-0.843773,229.566,99.9646)"
+                >
+                  <text x="129.332px" y="16.57px">o</text>
+                </g>
+                <g
+                  transform="matrix(-0.950567,-0.310519,0.310519,-0.950567,212.161,44.7901)"
+                >
+                  <text x="109.646px" y="5.508px">r</text>
+                </g>
+                <g
+                  transform="matrix(-0.996544,-0.0830657,0.0830657,-0.996544,187.873,9.61034)"
+                >
+                  <text x="94.136px" y="0.897px">e</text>
+                </g>
+                <g
+                  transform="matrix(-0.940524,0.339727,-0.339727,-0.940524,114.73,-14.8204)"
+                >
+                  <text x="58.663px" y="2.633px">-</text>
+                </g>
+              </g>
+            </svg>
+            <h1 id="learn-more-arrow">↓</h1>
+          </a>
+        </div>
+      </section>
+      <section id="about"></section>
+      <section id="work">
+        <div class="project"></div>
+      </section>
+    </main>
   </body>
   <script src="./scripts/cursor.js"></script>
+  <script src="./scripts/index.js"></script>
 </html>
