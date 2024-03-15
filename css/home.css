@@ -5,7 +5,7 @@
   gap: 12.5%;
   justify-content: space-around;
   min-height: calc(100vh - 60px);
-  padding: 0 2rem 80px 2rem;
+  padding: 0 2rem 0 2rem;
 
   .hero-image {
     display: none;
@@ -108,5 +108,114 @@
 }
 
 #about {
+  display: flex;
   height: calc(100vh - 80px);
+  padding: 0 2rem 80px 2rem;
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #about-text-header-1 {
+      margin-bottom: 0;
+    }
+
+    #about-text-header-2 {
+      margin-top: 0;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  .about-graphic {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #about {
+    padding: 80px 12.5% 0 12.5%;
+
+    .about-text {
+      width: 50%;
+    }
+
+    .about-graphic {
+      width: 50%;
+    }
+  }
+}
+
+#work {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  padding: 0 2rem 80px 2rem;
+
+  .project {
+    background-color: hsl(210, 13%, 8%);
+    border-radius: 1rem;
+    color: inherit;
+    cursor: none;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.25s;
+
+    img {
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+
+    h5 {
+      margin: 1em 0;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  .project:hover {
+    background-color: var(--secondary);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #work {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px 12.5% 0 12.5%;
+
+    .project {
+      h5 {
+        text-align: left;
+      }
+    }
+  }
+}
+
+#contact {
+  background-image: url(/images/layered-waves.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 80px;
+
+  .contact-details {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #work {
+    padding-bottom: 0px;
+    padding-top: 80px;
+  }
 }

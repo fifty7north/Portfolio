@@ -133,18 +133,27 @@ nav {
     }
   }
 
-  .nav-links {
+  .nav-links-container {
     display: flex;
     justify-content: right;
     opacity: 0;
     width: 50%;
 
-    div {
+    .nav-links {
+      color: inherit;
+      cursor: none;
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      margin: 0 1em;
+      padding: 0 1em;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .nav-links:hover {
+      background-color: var(--text);
+      color: var(--background);
     }
   }
 }
@@ -154,7 +163,7 @@ nav {
     border-width: 0px 0px 1px 0px;
     padding: 0 12.5%;
 
-    .nav-links {
+    .nav-links-container {
       opacity: 1;
     }
   }
